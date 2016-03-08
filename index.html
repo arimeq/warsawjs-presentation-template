@@ -7,8 +7,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="themes/warsawjs/styles/screen.css">
     <link rel="stylesheet" href="themes/warsawjs/styles/custom.css">
+    <style>
+        li {margin-left: 5em;}
+        p.note {display:none}
+    </style>
 </head>
-<body class="list">
+<body class="shower list">
     <header class="caption">
         <h1>WarsawJS Presentation Template</h1>
         <p>We talk about JavaScript. Each month in Warsaw, Poland.</p>
@@ -20,111 +24,93 @@
                 <img src="themes/warsawjs/pictures/logo.png">
             </div>
             <div class="content">
-                <h2>WarsawJS Presentation Template</h2>
-                <p>Author Name <a href="http://twitter.com/author">@author</a>
+                <h2>JS Ladies:<br>call to action!</h2>
+                <p>Paweł Pruszkowski <a href="http://twitter.com/arim">@arim</a>
             </div>
         </div>
     </section>
 
-    <section class="slide">
-        <div>
-            <h2>Plain Text on Your Slides</h2>
+	<section class="slide">
+		<h2>Women in IT</h2>
+		<ol>
+			<li>Only around 11% of software engineers people are women</li>
+			<li class="next">...but women are at least as good coders as men</li>
+			<li class="next">There are numerous initiatives to drive more women to IT</li>
+		</ol>
+        <p class="note">Source: http://www.theguardian.com/technology/2016/feb/12/women-considered-better-coders-hide-gender-github</p>
+	</section>
 
-            <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco
-                laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in
-                reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </section>
-
-    <section class="slide">
+    <section class="slide cover">
         <div>
-            <h2>All Kind of Lists</h2>
-            <ol>
-                <li>Simple lists are marked with bullets</li>
-                <li>Ordered lists begin with a number</li>
-                <li>You can even nest lists one inside another
-                    <ul>
-                        <li>Or mix their types</li>
-                        <li>But do not go too far</li>
-                        <li>Otherwise audience will be bored</li>
-                    </ul>
-                </li>
-                <li>Look, seven rows exactly!</li>
-            </ol>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>JavaScript Samples</h2>
-            <pre>
-                <code><mark class="comment">// Crockford style IIFE</mark></code>
-                <code>(function () {</code>
-                <code>  var <mark>someVar</mark> = 'value';</code>
-                <code>  console.<mark class="important">log</mark>(someVar);</code>
-                <code>}());</code>
-            </pre>
-        </div>
-    </section>
-    <section class="slide">
-        <div>
-            <h2>Even Tables</h2>
-            <table>
-                <tr>
-                    <th scope="col">Locavore</th>
-                    <th>Umami</th>
-                    <th>Helvetica</th>
-                    <th>Vegan</th>
-                </tr>
-                <tr>
-                    <th scope="row">Fingerstache</th>
-                    <td>Kale</td>
-                    <td>Chips</td>
-                    <td>Keytar</td>
-                </tr>
-                <tr>
-                    <th scope="row">Sriracha</th>
-                    <td>Gluten-free</td>
-                    <td>Ennui</td>
-                    <td>Keffiyeh</td>
-                </tr>
-                <tr>
-                    <th scope="row">Thundercats</th>
-                    <td>Jean</td>
-                    <td>Shorts</td>
-                    <td>Biodiesel</td>
-                </tr>
-                <tr>
-                    <th scope="row">Terry</th>
-                    <td>Richardson</td>
-                    <td>Swag</td>
-                    <td>Blog</td>
-                </tr>
-            </table>
-            <p>It’s good to have information organized.</p>
+            <img src="./images/Rails_Girls.jpg" alt="">
         </div>
     </section>
 
     <section class="slide cover">
         <div>
-            <img src="./themes/warsawjs/pictures/bigphoto.jpg" alt="">
+            <img src="./images/learn-it-girl.png" alt="">
         </div>
     </section>
 
-    <section class="slide shout">
+    <section class="slide cover" style="background-color: white">
         <div>
-            <h2>See you next month at WarsawJS</h2>
+            <img src="./images/ggc_napis.jpg" alt="">
         </div>
     </section>
 
-    <p class="badge"><a href="https://github.com/warsawjs/presentation-template">Fork me on Github</a></p>
+    <section class="slide cover">
+        <div>
+            <img src="./images/django_girls.png" alt="">
+        </div>
+    </section>
 
-    <div class="progress">
-        <div></div>
-    </div>
+    <section class="slide cover">
+        <div>
+            <img src="./images/js.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide shout shrink">
+        <div>
+            <h2>This must change!</h2>
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div style="background-color: white">
+            <style>
+                #woman-coder {position: static; width: 300px;}
+                #small-js { position: static; width: 300px; }
+                #big { font-size: 5em; }
+            </style>
+            <img src="./images/female-computer-silhouette.png" id="woman-coder" alt="">
+            <span id="big">+</span>
+            <img src="./images/js.jpg" id="small-js" alt="">
+        </div>
+    </section>
+
+	<section class="slide">
+		<h2>Idea</h2>
+		<ol>
+			<li>One- or two-days workshop</li>
+			<li class="next">For women without prior IT experience</li>
+			<li class="next">Basics of web development: HTML, CSS, JavaScript</li>
+			<li class="next">If time permits, basics of node.js</li>
+			<li class="next">Working on some sample app</li>
+		</ol>
+	</section>
+
+    <section class="slide shout shrink">
+        <div>
+            <h2>We need your help!</h2>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Contact me: <a href="mailto:ppruszkowski@gmail.com">ppruszkowski@gmail.com</a></h2>
+        </div>
+    </section>
 
     <script src="shower/shower.min.js"></script>
 </body>
